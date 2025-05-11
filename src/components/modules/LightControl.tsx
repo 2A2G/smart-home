@@ -41,7 +41,7 @@ const LightControl = () => {
     }
   };
 
-  const handleDurationChange = (e) => {
+  const handleDurationChange = (e: { target: { value: string; }; }) => {
     const value = parseInt(e.target.value);
     setLightDuration(value);
     if (lightStatus === "Encendida") {
