@@ -1,0 +1,35 @@
+# Directorio de dependencias (npm, yarn, pnpm)
+node_modules/
+
+# Directorio de compilación de Next.js
+.next/
+
+# Archivo de caché de Vercel (si usas Vercel)
+.vercel/
+
+# Archivos de logs de npm/yarn/pnpm
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Archivos de entorno (suelen contener información sensible)
+.env.local
+.env.*.local # Para variantes como .env.development.local, .env.production.local
+
+# Archivos de compilación estática (si usas next export)
+out/
+
+# Archivos de configuración de IDEs (opcional, pero recomendado)
+.vscode/ # VS Code
+.idea/ # WebStorm/IntelliJ
+*.iml # IntelliJ IDEA
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Pruebas (opcional, si generas snapshots)
+__snapshots__
+
+# Archivos generados por Storybook (si lo usas)
+.storybook/out
