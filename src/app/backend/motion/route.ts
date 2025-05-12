@@ -7,12 +7,7 @@ export async function POST(request: NextRequest) {
     const { status } = body;
 
     if (typeof status === "boolean") {
-      console.log("Received status (Next.js API):", status);
-
-      return NextResponse.json(
-        { message: "Status received successfully", status },
-        { status: 200 }
-      );
+      return new Response(null, { status: 200 });
     } else {
       return NextResponse.json(
         { error: "Invalid status. It must be a boolean value." },
